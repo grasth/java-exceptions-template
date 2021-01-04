@@ -20,7 +20,7 @@ public class UserRepository implements IUserRepository {
     /**
      * Поскольку мы еще не прошли тему по работе с базами данных, сохранять пользователей будем в списке
      */
-    private List<User> userDatabase = new ArrayList<>();
+    private final List<User> userDatabase = new ArrayList<>();
 
     /**
      * Позволяет сохранить пользователя, либо обновить пароль текущего, если пользователь с таким логином уже
